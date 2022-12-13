@@ -1,0 +1,150 @@
+.cookie_notice {
+  position: fixed;
+  z-index: 9999999;
+  bottom: 20px;
+  left: 10px;
+  right: 10px;
+  text-align: center;
+  font-size: 60px;
+  font-family: Verdana, sans-serif;  
+  background: #337AB7;
+  padding: 10px 20px; 
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 5);
+  border: 4px solid #BFE2FF;/*border-top*/
+}
+.alarmWindow {
+  position: fixed;
+  z-index: 9999998;
+  top: 100px;
+  left: 150px;
+  right: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Verdana, sans-serif;  
+  padding: 10px 20px; 
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 5);
+  border: 4px solid #000000;/*border-top*/
+  background: #ffffff;
+}
+
+div.info {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 48pt;
+  color: #666666;
+  padding: 10px 4px 4px 4px; 
+  /*margin: 20px 4px 4px 4px;*/
+}
+div.words {
+  font-family: Verdana, Arial Black, Helvetica, sans-serif;
+  font-weight: bolder; /* Размер шрифта в пунктах */
+  font-size: 60pt;
+  padding: 10px 4px 4px 4px; 
+  /*margin: 20px 4px 4px 4px;*/
+
+}
+div.buttonBlok{
+  /*display:flex; 
+  justify-content:center; */
+  font-family: Verdana, Arial Black, Helvetica, sans-serif;
+  font-weight: bolder; /* Размер шрифта в пунктах */
+  font-size: 24pt;
+  padding: 0px 40px 20px 4px;
+}
+div.buttonBlok2{
+  font-family: Verdana, Arial Black, Helvetica, sans-serif;
+  font-weight: bolder; /* Размер шрифта в пунктах */
+  font-size: 24pt;
+  border: solid 3px black;
+  padding: 0px 10px 10px 10px;
+  vertical-align: middle;
+  border-radius: 60px;
+  display: inline-block;
+}
+input.button1 {
+  font-family: Verdana, Arial Black, Helvetica, sans-serif;
+  font-weight: bolder; /* Размер шрифта в пунктах */
+  font-size: 36pt;
+  border: solid 4px black;
+  border-radius: 30px;
+  margin: 20px 0px 4px 0px;
+  padding: 7px 20px 10px 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 5); /* Параметры тени */
+  /*display: inline-block; 
+  //margin-left: 20px;
+  //float: left;*/
+  display: inline-block;
+}
+input[value="Cancel"]{
+  background-color: #337AB7;
+}
+.signing{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  /*font-weight: bolder;  Размер шрифта в пунктах */
+  margin: 0px 0px 0px 20px;
+  font-size: 40pt;    
+}
+div.button2 {
+  border: solid 8px black;
+  border-radius: 30px;
+  margin: 0px 0px 0px 10px;
+  width: 30px;
+  height:30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+div.radio{
+  font-family: Verdana, Arial Black, Helvetica, sans-serif;
+  font-weight: bolder; /* Размер шрифта в пунктах */
+  font-size: 36pt;  
+  margin: 10px 0px 0px 0px;
+  padding: 5px 0px 0px 0px; 
+  border-radius: 40px;
+  display: inline-block;/*;*/
+  background-color: #ddddd0;
+  height: 70px;
+  vertical-align: middle;
+
+}
+div.radioText{
+  vertical-align: middle;
+  /*border:solid;*/
+  margin:0px 15px 0px 0px; 
+  display:inline;
+}
+label{
+  font-family: Verdana, Arial Black, Helvetica, sans-serif;
+  font-weight: bolder; /* Размер шрифта в пунктах */
+  font-size: 40pt;  
+  display: inline-block;
+  text-align: 'center';
+}
+.alarmWindow{
+  padding: 20px; 
+  margin:20px 15px 0px 0px; 
+  z-index:100; 
+  text-align:'center';
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  /*font-weight: bolder;  Размер шрифта в пунктах */
+  font-size: 24pt;  
+}
+hr {
+    width: 80%; /* ширина линии */
+    height: 4px; /* высота / толщина линии */
+    background: #000000; /* фон / цвет линии */
+}
+.dictTable{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 24pt;  
+  border:solid; display:inline-block; margin: 5px; border-radius: 10px;
+}
+.dictTableName{
+  background-color:#444444; color:#ffffff; border-radius: 10px;
+}
+.dictTable2{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size:48pt;  
+  border:solid; display:inline-block; margin: 5px; border-radius: 10px;
+}
+
