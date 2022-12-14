@@ -42,11 +42,17 @@ function selectDictTable(id){
     '<div>'+
           (isCurr ? '':
            '<input class="button1" type="button" value="Select this dictionary" onclick="SelectThisDict('+n+')"/>') +
-          '<input class="button1" type="button" value="Get link" onclick="GetLinkToDikt('+ n +')" />'+
+          '<input class="button1" type="button" value="Get link" onclick="GetLinkToDict('+ n +')" />'+
+          '<input class="button1" type="button" value="Open dictionary" onclick="OpenDict('+ n +')" />'+
           '<input class="button1" type="button" value="Cancel" onclick="showDictTableList()" />'+
     '</div>'
 
   document.getElementById("DictArr").innerHTML = str;
+}
+function OpenDictForWe(n){
+  let str = JSON.stringify({ user: window.currUser, dictName: window.dictArr[n].dictName});
+  window.setData("CheckFileExist", str);
+  window.waiting();
 }
 
 function setAlarmEl(el){
@@ -55,6 +61,7 @@ function setAlarmEl(el){
   el.style.border = "solid";
   el.style.boxShadow = "10px 10px 10px rgba(0, 0, 0, 5)";
 }
+
 function setNormalEl(el){
   el.style.color = "black";
   el.style.borderColor = "black";
@@ -81,7 +88,7 @@ function Info(infoDesk, text){
   infoDesk.innerHTML = text + okButton;
 }
 
-function GetLinkToDikt(n){
+function GetLinkToDict(n){
   let str = "https://fowoca.glitch.me/t" + window.currUser + ":" + window.dictArr[n].dictName;
   navigator.clipboard.writeText(str)
   .then(() => {
@@ -92,22 +99,3 @@ function GetLinkToDikt(n){
     //console.log('Something went wrong', err);
   });
 }
-/*
-function createEl(){
-  
-}
-
-<table>
-    <thead>
-        <tr>
-            <th colspan="2">The table header</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>The table body</td>
-            <td>with two columns</td>
-        </tr>
-    </tbody>
-</table>
-*/
